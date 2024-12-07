@@ -20,7 +20,7 @@ public class UsersController(DataContext context) : ControllerBase
     public async Task<ActionResult<AppUser>> GetUser(int id)
     {
         var user = await context.Users.FindAsync(id);
-        if(user == null)
+        if (user == null)
         {
             return NotFound();
         }
