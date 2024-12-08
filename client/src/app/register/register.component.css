@@ -22,12 +22,11 @@ form {
 }
 
 h2.text-center {
-  font-size: 20px;
-  color: #3498db;
+  font-size: 30px;
+  color: #3498db !important;
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 hr {
   border: 0;
   border-top: 1px solid #444;
@@ -63,7 +62,7 @@ hr {
   top: 5px; /* Adjusted top position for better vertical alignment */
   left: 15px;
   font-size: 14px;
-  color: #aaa;
+  color: white;
   pointer-events: none;
   transition: 0.3s ease;
 }

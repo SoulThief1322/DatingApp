@@ -74,8 +74,8 @@ body {
   }
   
   .container.register-mode {
-    background-color: transparent; /* Keep the background transparent in register mode */
-    padding: 0; /* No padding */
+    background-color: transparent;
+    padding: 0;
     box-shadow: none;
   }
   
