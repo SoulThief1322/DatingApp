@@ -1,39 +1,128 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-}
-
-.container {
-    max-width: 1000px;
-}
-
-h1 {
-    font-weight: 600;
-}
-
-.btn {
-    font-size: 1.2rem;
-    padding: 12px 25px;
-    border-radius: 30px;
-}
-
-.card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.lead {
-    font-size: 1.1rem;
-}
-
-.shadow-lg {
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Optional: Ensure the inner app-register component does not add extra borders or background */
-app-register {
-    background: none;
-    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a202c;
+    margin: 0;
     padding: 0;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Remove background for the home page (non-register mode) */
+  .container:not(.register-mode) {
+    background-color: transparent; /* No background */
+    padding: 0; /* No padding */
+  }
+  
+  h1.display-4 {
+    font-size: 40px;
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  p.lead {
+    font-size: 18px;
+    color: #ecf0f1;
+    margin-bottom: 40px;
+  }
+  
+  button {
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  button.btn-primary {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #2980b9;
+  }
+  
+  button.btn-info {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  button.btn-info:hover {
+    background-color: #138496;
+  }
+  
+  .card {
+    background-color: #2d3748;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card .p-4 {
+    padding: 20px;
+  }
+  
+  .app-register {
+    width: 100%;
+  }
+  
+  .container.register-mode {
+    background-color: transparent; /* Keep the background transparent in register mode */
+    padding: 0; /* No padding */
+    box-shadow: none;
+  }
+  
+  .text-center {
+    padding: 20px;
+  }
+  
+  .text-center h2 {
+    font-size: 24px;
+    color: #3498db;
+    font-weight: 600;
+  }
+  
+  .text-center input {
+    margin-bottom: 15px;
+  }
+  
+  .form-floating input {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #3a434e;
+    border: 1px solid #444;
+    color: #ecf0f1;
+    font-size: 14px;
+  }
+  
+  .form-floating label {
+    color: #aaa;
+  }
+  
+  .form-group button {
+    border-radius: 25px;
+    padding: 10px 20px;
+  }
+  
+  @media (max-width: 768px) {
+    h1.display-4 {
+      font-size: 30px;
+    }
+  
+    p.lead {
+      font-size: 16px;
+    }
+  
+    button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
