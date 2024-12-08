@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lead {
+    font-size: 1.1rem;
+}
+
+.shadow-lg {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Ensure the inner app-register component does not add extra borders or background */
+app-register {
+    background: none;
+    border: none;
+    padding: 0;
+}

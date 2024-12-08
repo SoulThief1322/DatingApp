@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <div class="text-center">
+        <!-- When not in register mode -->
+        @if(!registerMode) {
+            <h1 class="display-4 text-primary mb-4">Find Your Match</h1>
+            <p class="lead text-muted mb-5">Come on in to view your matches... All you need to do is sign up!</p>
+            
+            <div class="d-flex justify-content-center">
+                <button (click)="registerToggle()" class="btn btn-primary btn-lg me-3 shadow-lg">Register</button>
+                <button class="btn btn-info btn-lg me-3 shadow-lg">Learn More</button>
+            </div>
+        }
+
+        <!-- When in register mode -->
+        @if(registerMode) {
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-12">
+                        <div class="card shadow-lg border-0 p-4">
+                            <!-- Remove extra padding or background from the app-register component -->
+                            <app-register (cancelRegister)="cancelRegisterMode($event)" class="p-0 bg-transparent"></app-register>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

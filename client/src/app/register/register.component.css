@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+form {
+  width: 400px;
+  text-align: center;
+}
+
+form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+form .form-floating {
+  margin-bottom: 20px;
+}
+
+form .form-floating input {
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+form .form-floating input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+}
+
+form .btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+form .btn-success:hover {
+  background-color: #218838;
+}
+
+form .btn-default {
+  background-color: transparent;
+  color: #6c757d;
+}
+
+form .btn-default:hover {
+  color: #343a40;
+}
