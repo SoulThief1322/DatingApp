@@ -1,126 +1,89 @@
-.dropdown-toggle, .dropdown-item{
-    cursor: pointer;
-}
-#logout{
-    cursor: pointer;
+.nav-item {
+  cursor: url('./cursors/pointer.cur'), auto;
 }
 .navbar {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: background-color 0.3s ease, padding 0.3s ease;
-    background-color: #1a202c;
-  }
-  
-  .navbar-dark .navbar-nav .nav-link {
-    font-weight: 500;
-    font-size: 14px;
-    color: #d1d5db;
-    transition: color 0.3s ease;
-    padding: 10px 15px;
-  }
-  
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #3498db;
-  }
-  
-  .navbar-dark .dropdown-toggle {
-    font-size: 14px;
-    color: #d1d5db;
-    padding: 10px 15px;
-    border-radius: 25px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .navbar-dark .dropdown-toggle:hover {
-    background-color: #2d3748;
-    color: #3498db;
-  }
-  
-  .navbar-dark .dropdown-menu {
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    padding: 10px;
-    background-color: #2d3748;
-    border: none;
-  }
-  
-  .navbar-dark .dropdown-item {
-    font-size: 14px;
-    color: #d1d5db;
-    padding: 8px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar-dark .dropdown-item:hover {
-    background-color: #3498db;
-    color: white;
-  }
-  
-  form.d-flex input.form-control {
-    border-radius: 25px;
-    padding: 8px 12px;
-    font-size: 14px;
-    margin-right: 10px;
-    background-color: #2d3748;
-    border: 1px solid #444;
-    color: #ecf0f1; /* Text color fixed to light for better visibility */
-    transition: all 0.3s ease;
-  }
-  
-  form.d-flex input.form-control::placeholder {
-    color: #a0aec0; /* Lighter placeholder text */
-  }
-  
-  form.d-flex input.form-control:focus {
-    background-color: #3a434e;
-    border-color: #3498db;
-    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
-  }
-  
-  form.d-flex button {
-    border-radius: 25px;
-    background-color: #3498db;
-    color: white;
-    font-size: 14px;
-    padding: 8px 20px;
-    transition: background-color 0.3s ease;
-    border: none;
-  }
-  
-  form.d-flex button:hover {
-    background-color: #2980b9;
-  }
-  
-  #logout .nav-link {
-    font-weight: 600;
-    color: #d1d5db;
-    transition: color 0.3s ease;
-  }
-  
-  #logout .nav-link:hover {
-    color: #3498db;
-  }
-  
-  .container {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  
-  @media (max-width: 767px) {
-    .navbar-nav {
-      text-align: center;
-      margin-top: 10px;
-    }
-  
-    .navbar-brand {
-      font-size: 1.25rem;
-    }
-  
-    .navbar-toggler {
-      border-color: #3498db;
-    }
-  }
-  
-  
+  background-color: #1a202c !important;
+  border-bottom: 2px solid #007bff; /* Subtle blue highlight */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #4da8da; /* Bright blue hover effect */
+  text-decoration: none;
+}
+.nav-link {
+  color: #d3d3d3; /* Light gray links */
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffffff; /* Brighter on hover */
+}
+
+.nav-item {
+  margin: 0 0.5rem;
+}
+
+/* Dropdown Menu */
+.btn-group .dropdown-toggle {
+  color: #d3d3d3; /* Light gray */
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-group .dropdown-toggle:hover {
+  color: #4da8da; /* Bright blue hover */
+}
+
+.dropdown-menu {
+  background-color: #3498db; /* Slightly lighter dark blue */
+  border: none;
+  border-radius: 4px; /* Smooth edges for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-item {
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #4da8da; /* Bright blue hover */
+  color: white;
+}
+
+.dropdown-divider {
+  border-color: #445;
+}
+
+/* Login Form */
+form.d-flex input {
+  background-color: #142b5e; /* Match the dark blue theme */
+  border: 1px solid #445;
+  color: #d3d3d3;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+form.d-flex input::placeholder {
+  color: #aab8d4; /* Subtle placeholder text */
+}
+
+form.d-flex button {
+  background-color: #007bff; /* Bright blue button */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+form.d-flex button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
